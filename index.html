@@ -2228,113 +2228,142 @@
     <!-- =========================================================
      PHOTO JOURNAL
 ========================================================= -->
-    <section class="bg-white py-16 sm:py-20">
+    <section class="bg-white py-12 sm:py-16 lg:py-20">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
-        <div class="flex items-end justify-between gap-4">
+        <div
+          class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
+        >
           <div>
             <div
-              class="text-[13px] font-black uppercase tracking-[.2em] text-emerald-600"
+              class="text-[12px] font-black uppercase tracking-[.2em] text-emerald-600 sm:text-[13px]"
             >
               See Sikkim differently
             </div>
             <h2
-              class="mt-2 text-[32px] font-black tracking-tight text-slate-950 sm:text-[38px]"
+              class="mt-2 text-[26px] font-black tracking-tight text-slate-950 sm:text-[32px] lg:text-[38px]"
             >
               A few reasons to pack your bags
             </h2>
           </div>
           <button
             onclick="openQuote()"
-            class="hidden rounded-full border border-slate-200 px-5 py-3 text-sm font-black sm:block"
+            class="hidden shrink-0 rounded-full border border-slate-200 px-5 py-3 text-sm font-black hover:bg-slate-950 hover:text-white sm:block"
           >
             Plan this trip →
           </button>
         </div>
 
-        <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:grid-rows-2">
+        <div
+          class="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-4 sm:grid-rows-2 lg:h-[520px] lg:gap-4"
+        >
+          <!-- Big card -->
           <div
-            class="group relative col-span-2 row-span-2 min-h-[360px] overflow-hidden rounded-[26px]"
+            class="group relative col-span-2 row-span-2 min-h-[260px] overflow-hidden rounded-[22px] sm:min-h-0 sm:rounded-[26px]"
           >
             <img
               src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=90"
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
               alt="Himalayas"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+              class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"
             ></div>
-            <div class="absolute bottom-5 left-5 text-white">
+            <div class="absolute bottom-5 left-5 right-5 text-white">
               <div
-                class="text-[12px] font-black uppercase tracking-widest text-emerald-300"
+                class="text-[11px] font-black uppercase tracking-widest text-emerald-300 sm:text-[12px]"
               >
                 The Himalayas
               </div>
-              <div class="mt-1 text-2xl font-black">
+              <div class="mt-1 text-xl font-black sm:text-2xl lg:text-3xl">
                 Big views. Small moments.
               </div>
             </div>
           </div>
+
+          <!-- Gangtok -->
           <div
-            class="group relative min-h-[175px] overflow-hidden rounded-[26px]"
+            class="group relative col-span-1 min-h-[160px] overflow-hidden rounded-[22px] sm:min-h-0 sm:rounded-[26px]"
           >
             <img
               src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=85"
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
               alt="Gangtok"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"
             ></div>
-            <div class="absolute bottom-4 left-4 text-white text-lg font-black">
+            <div
+              class="absolute bottom-4 left-4 right-4 text-base font-black text-white sm:text-lg"
+            >
               Gangtok
             </div>
           </div>
+
+          <!-- Tsomgo -->
           <div
-            class="group relative min-h-[175px] overflow-hidden rounded-[26px]"
+            class="group relative col-span-1 min-h-[160px] overflow-hidden rounded-[22px] sm:min-h-0 sm:rounded-[26px]"
           >
             <img
               src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=800&q=85"
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
               alt="Lake"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"
             ></div>
-            <div class="absolute bottom-4 left-4 text-white text-lg font-black">
+            <div
+              class="absolute bottom-4 left-4 right-4 text-base font-black text-white sm:text-lg"
+            >
               Tsomgo
             </div>
           </div>
+
+          <!-- North Sikkim -->
           <div
-            class="group relative min-h-[175px] overflow-hidden rounded-[26px]"
+            class="group relative col-span-1 min-h-[160px] overflow-hidden rounded-[22px] sm:min-h-0 sm:rounded-[26px]"
           >
             <img
               src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=85"
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
               alt="Valley"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"
             ></div>
-            <div class="absolute bottom-4 left-4 text-white text-lg font-black">
+            <div
+              class="absolute bottom-4 left-4 right-4 text-base font-black text-white sm:text-lg"
+            >
               North Sikkim
             </div>
           </div>
+
+          <!-- Monasteries -->
           <div
-            class="group relative min-h-[175px] overflow-hidden rounded-[26px]"
+            class="group relative col-span-1 min-h-[160px] overflow-hidden rounded-[22px] sm:min-h-0 sm:rounded-[26px]"
           >
             <img
               src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=85"
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              class="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
               alt="Monastery"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"
             ></div>
-            <div class="absolute bottom-4 left-4 text-white text-lg font-black">
+            <div
+              class="absolute bottom-4 left-4 right-4 text-base font-black text-white sm:text-lg"
+            >
               Monasteries
             </div>
           </div>
         </div>
+
+        <!-- Mobile-only CTA -->
+        <button
+          onclick="openQuote()"
+          class="mt-4 w-full rounded-full border border-slate-200 px-5 py-3 text-sm font-black sm:hidden"
+        >
+          Plan this trip →
+        </button>
       </div>
     </section>
 
